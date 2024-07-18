@@ -1,4 +1,8 @@
 <?php
 define("Cars", ["Toyota", "Volvo", "BMW"]);
 
-echo Cars[0];
+function myFunction(){
+    echo "I like " . Cars[0] . ", " . Cars[1] . " and " . Cars[2] . ".";
+}
+
+myFunction();
