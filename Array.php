@@ -2,13 +2,63 @@
 /* An array is a special variable that can 
 hold many values under a single name, 
 and you can access the values by referring to an index numb er or name. */
-//removing multiple items from an array using array_splice and unset
+//Multidimensional array
+$cars = array (
+    array("Volvo",22,18),
+    array("BMW",15,13),
+    array("Saab",5,2),
+    array("Land Rover",17,15)
+  );
+for ($row = 0; $row < 4; $row++){
+    echo "Row Number".$row."\n";
+    for ($col = 0; $col < 3; $col++) {
+        echo "=>".$cars[$row][$col]."\n";
+    }
+}  
+
+//sort array sort() rsort() asort() ksort() arsort() krsort() 
+/* //sort()- sort array in ascending order using values
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+asort($age);
+print_r($age) */;
+
+
+/* //sort()- sort array in descending order
+$cars = array("Volvo", "BMW", "Toyota");
+rsort($cars);
+var_dump($cars) */
+
+/* //sort()- sort array in ascending order
+$cars = array("Volvo", "BMW", "Toyota");
+sort($cars);
+var_dump($cars) */
+
+/* //remove the first item from an array
+$cars = array("Volvo", "BMW", "Toyota");
+array_shift($cars);
+var_dump($cars); */
+
+/* //remove last item from an array
+$cars = array("Volvo", "BMW", "Toyota");
+array_pop($cars);
+var_dump($cars) */;
+
+
+/* //removing item from an array using array_diff
+$cars = array("brand" => "Ford", "model" => "Mustang", "year" => 1964);
+$newarray = array_diff($cars, ["Mustang", 1964]);
+var_export($newarray); */
+
+/* // removing item from an array using associative array
+$cars = array("brand" => "Ford", "model" => "Mustang", "year" => 1964);
+unset($cars["model"]);
+var_dump($cars); */
+
+/* //removing multiple items from an array using array_splice and unset
 $cars = array("Volvo", "BMW", "Toyota", "Ford");
 array_splice($cars, 1, 2);
 unset($cars[0], $cars[1]);
-var_dump($cars);
-
-
+var_dump($cars); */
 
 /* //removing item from an array using splice and unset
 $cars = array("Volvo", "BMW", "Toyota");
