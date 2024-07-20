@@ -1,5 +1,19 @@
 <?php
-// sum of number in array
+//variadic arguments
+function nameFamily($lastname, ...$firstname) {
+    $name = " ";
+    $len = count($firstname);
+    for($i = 0; $i < $len; $i++) {
+      $name  = $name . "Hello, $firstname[$i] $lastname \n";
+    }
+    return $name;
+    
+  }
+
+echo nameFamily("Paul", "Jacqueline", "Jackson", "Japhet", "Josephat", "Josia", "Jovin");
+
+
+/* // sum of number in array
 function sumArray(...$arg){
     $len = count($arg);
     $sum = 0;
@@ -9,7 +23,7 @@ function sumArray(...$arg){
     return $sum;
 }
 
-echo sumArray(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+echo sumArray(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); */
 
 
 /* // passing arg by reference
