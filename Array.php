@@ -2,10 +2,37 @@
 /* An array is a special variable that can 
 hold many values under a single name, 
 and you can access the values by referring to an index numb er or name. */
+//removing multiple items from an array using array_splice and unset
+$cars = array("Volvo", "BMW", "Toyota", "Ford");
+array_splice($cars, 1, 2);
+unset($cars[0], $cars[1]);
+var_dump($cars);
+
+
+
+/* //removing item from an array using splice and unset
+$cars = array("Volvo", "BMW", "Toyota");
+array_splice($cars, 1, 1);
+unset($cars[0]);
+var_dump($cars); */
+
+
+
+/* //Add items to an array ung associative array (-=)
+$cars = array("brand" => "Ford", "model" => "Mustang");
+$cars += ["color" => "red", "year" => 1964];
+var_dump($cars);
+ */
+
+/* //Add items to an array(using push)
+$nationals = ["Tanzania", "Kenya"];
+array_push($nationals, "Uganda", "Rwanda");
+var_dump($nationals); */
+
 //Add items to an array(with index)
-$car = array("brand" => "Toyota", "model" => "Corolla", "year" => 2018);
+/* $car = array("brand" => "Toyota", "model" => "Corolla", "year" => 2018);
 $car["color"] = "Red";
-var_dump($car);
+var_dump($car) */;
 
 
 /* //update array element
