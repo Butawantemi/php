@@ -10,9 +10,10 @@ $cars = array (
     array("Land Rover",17,15)
   );
 for ($row = 0; $row < 4; $row++){
-    echo "Row Number".$row."\n";
+    echo "Row Number". " ".$row."\n";
     for ($col = 0; $col < 3; $col++) {
         echo "=>".$cars[$row][$col]."\n";
+        "\n";
     }
 }  
 
