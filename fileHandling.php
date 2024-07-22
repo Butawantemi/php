@@ -3,10 +3,10 @@
 //PHP Create File - fopen()
 //fopen("word.text", "w");
 //PHP Write to File - fwrite()
-$file = fopen("newFile.text", "w") or die("Unable to open file!");
-$text  = "Hello World!";
+$file = fopen("newFile.text", "a") or die("Unable to open file!");
+$text  = "Japhet Butawantemi!\n";
 fwrite($file, $text);
-$text = "Hello World Again!";
+$text = "Japhet Paul!\n";
 fwrite($file, $text);
 fclose($file);
 
