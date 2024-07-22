@@ -1,8 +1,14 @@
 <?php
-//preg_match_all
+//preg_replace for replace all matches of the pattern
+$str = "Visit Microsoft!";
+$pattern = "/microsoft/i";
+echo preg_replace($pattern, "W3Schools", $str);
+
+
+/* //preg_match_all
 $str = "The rain in SPAIN falls mainly on the plains.";
 $pattern = "/ain/i";
-echo preg_match_all($pattern, $str);
+echo preg_match_all($pattern, $str); */
 
 
 /* //preg_match for check the pattern
