@@ -8,6 +8,12 @@ function divide($dividend, $divisor) {
 //try and catch block
 try {
     echo divide(5, 0); 
-}catch(Exception $e){
-    echo "Unable to divide.";
+}catch(Exception $ex){
+    $code = $ex->getCode();
+    $message = $ex->getMessage();
+    $file = $ex->getFile();
+    $line = $ex->getLine();
+    echo "Unable to divide. \n";
+}finally {
+    Echo "Process complete";
 }
