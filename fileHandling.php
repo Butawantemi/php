@@ -1,7 +1,9 @@
 <?php
 //PHP File Handling
+
 //PHP Create File - fopen()
-$target_dir = "uploads/";
+/*//file uploading
+ $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -47,17 +49,7 @@ if ($uploadOk == 0) {
   } else {
     echo "Sorry, there was an error uploading your file.";
   }
-}
-
-
-
-
-
-
-
-
-
-
+} */
 
 
 
