@@ -27,8 +27,14 @@ class Mouse implements Animal {
 $cat = new Cat();
 $dog = new Dog();
 $mouse = new Mouse();
+$animals = array($cat, $dog, $mouse);
 
-//Call the makeSound method from the cat class
+//loop through the objects and call the makeSound method
+foreach($animals as $animal){
+    $animal->makeSound();
+}
+
+/* //Call the makeSound method from the cat class
 $cat->makeSound();
 $dog->makeSound();
-$mouse->makeSound();
+$mouse->makeSound(); */
