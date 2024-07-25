@@ -4,13 +4,13 @@ abstract class prentClass{
 }
 
 class ChildClass extends prentClass {
-    public function PrefixName($name){
+    public function PrefixName($name, $separator = ".", $greet = "Dear"){
         if($name == "John Doe"){
-            $prefix = "Mr.";
+            $prefix = "Mr";
         }else{
-            $prefix = "Mrs.";
+            $prefix = "Mrs";
         }
-        return "{$prefix} {$name}";
+        return "{$greet} {$prefix}{$separator} {$name}";
     }
 }
 
