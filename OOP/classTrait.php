@@ -6,10 +6,19 @@ trait message {
     }
 }
 
+
+trait message2 {
+    public function msg2() {
+      echo "OOP reduces code duplication!";
+    }
+  }
+
 //class Welcome is using message trait
-class Welcome {
+class Welcome  {
     use message;
 }
+
+//class
 
 //create object of Welcome class
 $obj = new Welcome();
