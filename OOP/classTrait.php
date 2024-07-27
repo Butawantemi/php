@@ -14,7 +14,7 @@ trait message2 {
   }
 
 //class Welcome is using message trait
-class Welcome1  {
+class Welcome1 hgjj {
     use message1;
 }
 
