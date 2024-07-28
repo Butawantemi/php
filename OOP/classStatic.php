@@ -13,6 +13,9 @@ class domainW3 extends domain {
     }
 }
 
+$domainW3 = new domainW3();
+echo $domainW3->websiteName;
+
 /* class A {
     public static function foo(){
         echo "I am foo from";
