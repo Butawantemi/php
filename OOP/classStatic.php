@@ -9,7 +9,7 @@ class domain {
 class domainW3 extends domain {
     public $websiteName;
     public function __construct(){
-        
+        $this->websiteName = parent::getWebsiteName();
     }
 }
 
