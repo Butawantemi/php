@@ -1,5 +1,6 @@
 <?php
 //Static method
+//class domain is having static method getWebsiteName
 class domain {
     protected static function getWebsiteName(){
         return "W3Schools.com";
