@@ -14,7 +14,7 @@ trait message2 {
   }
 
 //class Welcome is using message trait
-class Welcome1 hgjj {
+class Welcome1 {
     use message1;
 }
 
@@ -25,4 +25,7 @@ class Welcome2 {
 
 //create object of Welcome class
 $obj = new Welcome1();
-$obj->msg();
+$obj->msg1();
+
+$obj2 = new Welcome2();
+$obj2->msg1();
