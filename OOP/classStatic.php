@@ -1,7 +1,19 @@
 <?php
 //Static method
+class domain {
+    protected static function getWebsiteName(){
+        return "W3Schools.com";
+    }
+}
 
-class A {
+class domainW3 extends domain {
+    public $websiteName;
+    public function __construct(){
+        
+    }
+}
+
+/* class A {
     public static function foo(){
         echo "I am foo from";
     }
@@ -16,7 +28,7 @@ class B {
 
 $obj = new B();
 $obj->bar();
-
+ */
 
 
 
