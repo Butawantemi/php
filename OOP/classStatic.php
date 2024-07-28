@@ -6,6 +6,7 @@ class domain {
     }
 }
 
+//class domainW3 is inheriting domain class
 class domainW3 extends domain {
     public $websiteName;
     public function __construct(){
