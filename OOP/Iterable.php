@@ -5,5 +5,6 @@ function printIterable(iterable $myIterable) {
     echo $item;
   }
 }
+//Initilize array
 $arr = ["a", "b", "c"];
 printIterable($arr);
