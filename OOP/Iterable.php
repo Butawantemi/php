@@ -5,3 +5,4 @@ function printIterable(iterable $myIterable) {
   }
 }
 $arr = ["a", "b", "c"];
+printIterable($arr);
