@@ -7,4 +7,5 @@ function printIterable(iterable $myIterable) {
 }
 //Initilize array
 $arr = ["a", "b", "c"];
+//Call function
 printIterable($arr);
