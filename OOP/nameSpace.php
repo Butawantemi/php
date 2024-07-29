@@ -16,5 +16,3 @@ $table->numRows = 5;
 <html>
 <body>
 
-<?php
-$table->message(); 
