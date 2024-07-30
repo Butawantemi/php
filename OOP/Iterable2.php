@@ -4,3 +4,6 @@ function getIterable():iterable {
 }
 
 $myIterable  = getIterable();
+foreach($myIterable as $item) {
+	echo $item;
+}
