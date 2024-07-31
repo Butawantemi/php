@@ -6,7 +6,7 @@ function getIterable():iterable {
 
 //use of iterable
 $myIterable = getIterable();
-//looping
+//looping through the iterable
 foreach($myIterable as $item) {
   echo $item;
 }
