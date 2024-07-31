@@ -1,5 +1,5 @@
 <?php 
-// vari
+// variable for connection
 $server= "localhost";
 $username  = "root";
 $password = "Mp@ng01211";
