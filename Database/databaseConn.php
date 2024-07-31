@@ -1,7 +1,13 @@
 <?php 
-$servername = "localhost";
+// Create connection
+$server= "localhost";
 $username  = "root";
 $password = "Mp@ng01211";
+$database = "firstdb";
 
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($server, $username, $password, $database);
 
+if ($conn->connect_error) {
+    die("Connection failed:" . $conn->connect_error);
+}
+echo "Connected successfully";
