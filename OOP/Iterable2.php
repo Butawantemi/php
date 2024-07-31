@@ -1,9 +1,10 @@
 <?php
+//function
 function getIterable():iterable {
-	return ["a", "b", "c"];
+  return ["a", "b", "c"];
 }
 
-$myIterable  = getIterable();
+$myIterable = getIterable();
 foreach($myIterable as $item) {
-	echo $item;
+  echo $item;
 }
