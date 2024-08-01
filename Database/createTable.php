@@ -25,3 +25,5 @@ if(mysqli_query($connect, $sql) == TRUE) {
 }else {
     echo "Creating table Error" . mysqli_error($connect);
 }
+
+mysqli_close($connect);
