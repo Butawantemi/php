@@ -11,14 +11,14 @@ if (!$connect) {
     die("Connection failed" . mysqli_connect_error());
 }
 
-//sql to create table
+//sql to insert data to table.
 $sql = "INSERT INTO MyGuests(firstname, lastname, email)
 VALUES('Japhet', 'Paul', 'japhetbuta@gmail.com')";
 
 if(mysqli_query($connect, $sql) == TRUE) {
-    echo "Table was succesfully created";
+    echo "New record was create succesfully";
 }else {
-    echo "Creating table Error" . mysqli_error($connect);
+    echo "Error" . mysqli_error($connect);
 }
 
 mysqli_close($connect);
