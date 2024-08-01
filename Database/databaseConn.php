@@ -1,6 +1,6 @@
 <?php 
 // variable for connection
-$server= "localhost";
+$server= "127.0.0.1";
 $username  = "root";
 $password = "Mp@ng01211";
 $database = "firstdb";
