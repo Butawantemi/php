@@ -11,7 +11,7 @@ if (!$connect) {
     die("Connection failed" . mysqli_connect_error());
 }
 
-//sql to insert data to table.
+//sql to insert data totable.
 $sql = "INSERT INTO MyGuests(firstname, lastname, email)
 VALUES('Japhet', 'Paul', 'japhetbuta@gmail.com')";
 
