@@ -12,3 +12,7 @@ if (!$connect) {
 }
 
 //filter data
+$sql = "SLECT * FROOM MyGuests WHERE firstname = 'Prisca'";
+$result = mysqli_query($connect, $sql);
+
+//return selected data
