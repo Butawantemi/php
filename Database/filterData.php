@@ -12,7 +12,15 @@ if (!$connect) {
 }
 
 //filter data
-$sql = "SLECT * FROOM MyGuests WHERE firstname = 'Prisca'";
+$sql = "SELECT * FROM MyGuests WHERE firstname = 'Prisca'";
 $result = mysqli_query($connect, $sql);
 
 //return selected data
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "id: " . $row["id"] . " -Name: " . $row["firstname"] . " " . $row["lastname"] . " -Email: " . $row["email"]."\n";
+        
+    }
+}else{
+    echo "0 results";
+}
