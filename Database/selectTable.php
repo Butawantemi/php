@@ -21,5 +21,5 @@ if (mysqli_num_rows($result) > 0) {
         echo "id: " . $row["id"] . " -Name: " . $row["firstname"] . " " . $row["lastname"] . " -Email: " . $row["email"];
     }
 }else{
-    ec
+    echo "0 results";
 }
