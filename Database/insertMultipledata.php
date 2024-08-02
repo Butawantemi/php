@@ -20,3 +20,10 @@ VALUES('Jackline', 'Paul', 'jacklinep@gmail.com')";
 
 $sql = "INSERT INTO MyGuests(firstname, lastname, email)
 VALUES('Josephat', 'Wante', 'josebuta@gmail.com')";
+
+//check if the 
+if(mysqli_multi_query($connect, $sql) == TRUE) {
+    echo "New record was create succesfully";
+}else{
+    echo "Errpr" . mysqli_error($connect);
+}
