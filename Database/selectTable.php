@@ -16,3 +16,6 @@ $sql = "SELECT * FROM MyGuests";
 $result = mysqli_query($connect, $sql);
 
 //return selected data
+if (mysqli_num_rows($result)> 0) {
+    
+}
