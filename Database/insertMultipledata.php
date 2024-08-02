@@ -27,3 +27,5 @@ if(mysqli_multi_query($connect, $sql) == TRUE) {
 }else{
     echo "Errpr" . mysqli_error($connect);
 }
+
+mysqli_close($connect);
