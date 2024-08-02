@@ -14,11 +14,3 @@ if (!$connect) {
 //sql to insert data to table.
 $sql = "INSERT INTO MyGuests(firstname, lastname, email)
 VALUES('Japhet', 'Paul', 'japhetbuta@gmail.com')";
-
-if(mysqli_query($connect, $sql) == TRUE) {
-    echo "New record was create succesfully";
-}else {
-    echo "Error" . mysqli_error($connect);
-}
-
-mysqli_close($connect);
