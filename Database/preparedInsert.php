@@ -17,3 +17,15 @@ $stmt->bind_param("sss", $firstname, $lastname, $email);
 
 //set parameters and execute
 $firstname = "Jackson";
+$lastname = "Buta";
+$email = "example@gmail.com";
+$stmt->execute();
+
+$firstname = "Prisca";
+$lastname = "Mlali";
+$email = "prisca@gmail.com";
+$stmt->execute();
+
+echo "New records was created successfully";
+
+$stmt->close();
