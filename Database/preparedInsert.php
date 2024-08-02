@@ -26,6 +26,9 @@ $lastname = "Mlali";
 $email = "prisca@gmail.com";
 $stmt->execute();
 
+//message to show if the new records was created successfully
 echo "New records was created successfully";
 
+//close the connection
 $stmt->close();
+$connect->close();
