@@ -12,7 +12,7 @@ if (!$connect) {
 }
 
 //filter data
-$sql = "SLECT * FROM MyGuests WHERE firstname = 'Prisca'";
+$sql = "SELECT * FROM MyGuests WHERE firstname = 'Prisca'";
 $result = mysqli_query($connect, $sql);
 
 //return selected data
