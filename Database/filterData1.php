@@ -17,5 +17,7 @@ $result = mysqli_query($connect, $sql);
 
 //return selected data
 if (mysqli_num_rows($result) > 0) {
-    while
+    while($row = mysqli_fetch_assoc($result)) {
+        echo "id: " . $row["id"] . "-Name:". $row["firstname"] . " " . $row["lastname"]."\n";    
+    }
 }
