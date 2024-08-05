@@ -12,3 +12,10 @@ if (!$connect) {
 }
 
 //delete data
+$sql = "DELETE FROM MyGuests WHERE id = 2";
+
+if (mysqli_query($connect, $sql)) {
+    echo "Record was deleted successfully";
+}else{
+    echo "Error deleting record:" . mysqli_error($connect);
+}
